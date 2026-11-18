@@ -92,14 +92,23 @@ namespace C__Basics_session03
 
             #region Q07
             // Write a do-while loop that prints "Checking book..." exactly 3 times.
-            int i = 0;
-            do
-            {
-                Console.WriteLine(books[i]);
-                ++i;
-            } while (i < 3);
+            //int i = 0;
+            //do
+            //{
+            //    Console.WriteLine(books[i]);
+            //    ++i;
+            //} while (i < 3);
 
             #endregion
+
+            #region Q08
+            // Using the same books array, use a foreach loop to print every book title. 
+            foreach(string name in books)
+            {
+                Console.WriteLine(name);
+            }
+            #endregion
+
         }
     }
 }
