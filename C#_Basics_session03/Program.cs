@@ -73,11 +73,23 @@ namespace C__Basics_session03
             //to print each book with its position number, like 1.Clean Code
 
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            for (int i = 0; i < books.Length; ++i)
+            //for (int i = 0; i < books.Length; ++i)
+            //{
+            //    Console.WriteLine($"{i + 1}. {books[i]}");
+            //}
+            #endregion
+
+            #region Q06
+            //Using the same books array, use a while loop to print every book title.
+            int size = books.Length;
+            int i = 0;
+            while(i < size)
             {
-                Console.WriteLine($"{i + 1}. {books[i]}");
+                Console.WriteLine(books[i]);
+                ++i;
             }
             #endregion
+
 
         }
     }
