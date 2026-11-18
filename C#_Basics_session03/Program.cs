@@ -125,14 +125,29 @@ namespace C__Basics_session03
             //Using the same books array, print every title except "The Pragmatic Programmer"(skip it with
             //continue, don't stop the loop). 
 
-            foreach (string name in books)
-            {
-                if (name == "The Pragmatic Programmer") continue;
-                Console.WriteLine(name);
-            }
+            //foreach (string name in books)
+            //{
+            //    if (name == "The Pragmatic Programmer") continue;
+            //    Console.WriteLine(name);
+            //}
 
             #endregion
 
+            #region Q11
+            //Write a method PrintFirstBook() that prints the first book in the books array.If the array is empty, 
+            //use return to exit the method early instead of printing anything
+
+            PrintFirstBook(books);
+
+
+            #endregion
+
+        }
+
+        static void PrintFirstBook(string[] books)
+        {
+            if (books.Length == 0) return;
+            Console.WriteLine(books[0]);
         }
     }
 }
