@@ -103,10 +103,22 @@ namespace C__Basics_session03
 
             #region Q08
             // Using the same books array, use a foreach loop to print every book title. 
-            foreach(string name in books)
+            //foreach(string name in books)
+            //{
+            //    Console.WriteLine(name);
+            //}
+            #endregion
+
+            #region Q09
+            //Using the same books array, loop through it and print each title, but stop completely (break) once 
+            //you reach "Refactoring"
+
+            foreach (string name in books)
             {
+                if (name == "Refactoring") break;
                 Console.WriteLine(name);
             }
+
             #endregion
 
         }
