@@ -81,16 +81,25 @@ namespace C__Basics_session03
 
             #region Q06
             //Using the same books array, use a while loop to print every book title.
-            int size = books.Length;
+            //int size = books.Length;
+            //int i = 0;
+            //while(i < size)
+            //{
+            //    Console.WriteLine(books[i]);
+            //    ++i;
+            //}
+            #endregion
+
+            #region Q07
+            // Write a do-while loop that prints "Checking book..." exactly 3 times.
             int i = 0;
-            while(i < size)
+            do
             {
                 Console.WriteLine(books[i]);
                 ++i;
-            }
+            } while (i < 3);
+
             #endregion
-
-
         }
     }
 }
